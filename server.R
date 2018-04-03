@@ -1,7 +1,7 @@
 library(shiny)
 library(ggplot2)
 
-df <-   readRDS(file = "data\\wine.rds")
+df <-   readRDS(file = "data/wine.rds")
 df$Cultivar <- as.factor(df$Cultivar) 
 
 shinyServer(function(input, output) {
